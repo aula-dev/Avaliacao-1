@@ -18,7 +18,8 @@ public class Endereco {
     private String numero;
     private String bairro;
     
-    private Estado estado;
+    private Cidade cidade;
+    
 
     public Endereco(Integer id, String logradouro, String numero, String bairro) {
         this.id = id;
@@ -59,14 +60,15 @@ public class Endereco {
         this.bairro = bairro;
     }
 
-    public Estado getEstado() {
-        return estado;
+    public Cidade getCidade() {
+        return cidade;
     }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
     }
-    
+
+   
     
 
     @Override
@@ -104,6 +106,9 @@ public class Endereco {
             return false;
         }
         return true;
+    }
+
+    public Endereco() {
     }
     
     

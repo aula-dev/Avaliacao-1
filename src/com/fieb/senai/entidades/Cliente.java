@@ -94,6 +94,9 @@ public class Cliente {
         }
         return true;
     }
+
+    public Cliente() {
+    }
     
     
 

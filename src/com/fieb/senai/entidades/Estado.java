@@ -65,6 +65,9 @@ public class Estado {
         }
         return true;
     }
+
+    public Estado() {
+    }
     
     
     
