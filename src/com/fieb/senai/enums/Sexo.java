@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.fieb.senai.app;
+package com.fieb.senai.enums;
 
 /**
  *
  * @author Casas Bahia
  */
-public class Avaliacao {
+public enum Sexo {
+    
+    Masculino, 
+    Feminino;
     
 }
