@@ -6,7 +6,9 @@
 package com.fieb.senai.entidades;
 
 import com.fieb.senai.enums.Sexo;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  *
@@ -17,7 +19,9 @@ public class Cliente {
     private Integer id;
     private String nome;
     private Integer idade;
+    
     private Sexo sexo;
+    private Set<String> telefone = new HashSet<>();
 
     public Cliente(Integer id, String nome, Integer idade, Sexo sexo) {
         this.id = id;
@@ -57,6 +61,16 @@ public class Cliente {
     public void setSexo(Sexo sexo) {
         this.sexo = sexo;
     }
+
+    public Set<String> getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(Set<String> telefone) {
+        this.telefone = telefone;
+    }
+    
+    
 
     @Override
     public int hashCode() {
