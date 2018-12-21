@@ -15,6 +15,9 @@ public class Estado {
     
     private Integer id;
     private String nome;
+    
+    // Faltou inserir atributo para referência ao relacionamento entre as classes Cidade e Estado.
+    // O atributo deverá ser uma coleção.
 
     public Estado(Integer id, String nome) {
         this.id = id;
