@@ -17,6 +17,8 @@ public class Endereco {
     private String logradouro;
     private String numero;
     private String bairro;
+    
+    private Estado estado;
 
     public Endereco(Integer id, String logradouro, String numero, String bairro) {
         this.id = id;
@@ -56,6 +58,16 @@ public class Endereco {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+    
+    
 
     @Override
     public int hashCode() {
