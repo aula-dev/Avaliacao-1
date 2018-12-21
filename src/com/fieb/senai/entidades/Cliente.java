@@ -22,6 +22,7 @@ public class Cliente {
     
     private Sexo sexo;
     private Set<String> telefone = new HashSet<>();
+    // Faltou o atributo para referência ao relacionamento entre as classes Cliente e Endereco.
 
     public Cliente(Integer id, String nome, Integer idade, Sexo sexo) {
         this.id = id;
